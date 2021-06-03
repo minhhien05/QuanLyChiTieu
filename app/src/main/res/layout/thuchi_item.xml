@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="8dp"
+    android:id="@+id/thuchi_item"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/tvMaLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã Loại"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="0.2"/>
+        <TextView
+            android:id="@+id/tvTenLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Loại"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/ivedit"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:src="@drawable/ic_edit"
+            android:layout_weight="0.2"/>
+        <ImageView
+            android:id="@+id/ivdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_delete"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

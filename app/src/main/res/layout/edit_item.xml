@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F5F5DC"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp">
+
+    <TextView
+        android:id="@+id/tvthongbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="Sữa Khoản Thu"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ettieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:hint="Tiêu Đề"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/etNgay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="left|center_vertical"
+        android:hint="Ngày"
+        android:layout_weight="0.5"/>
+        <ImageView
+            android:id="@+id/ivlich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_calendar"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etGhiChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="left|center_vertical"
+        android:hint="Ghi Chú" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/etTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="left|center_vertical"
+        android:hint="Tiền"
+        android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="VND"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnDongY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng Ý"
+            android:layout_toLeftOf="@+id/btnXoa"
+            android:background="@drawable/custom_button"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:layout_toLeftOf="@id/btnHuy"
+            android:background="@drawable/custom_button"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huỷ"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_button"
+            android:layout_margin="4dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
